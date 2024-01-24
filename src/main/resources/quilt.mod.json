@@ -18,8 +18,14 @@
     },
     "intermediate_mappings": "net.fabricmc:intermediary",
     "entrypoints": {
-      "adapter": "kotlin",
-      "init": "com.github.htgazurex1212.MinecraftRiichiMahjongMod"
+      "main": {
+        "adapter": "kotlin",
+        "value": "com.github.htgazurex1212.MinecraftRiichiMahjong"
+      },
+      "client": {
+        "adapter": "kotlin",
+        "value": "com.github.htgazurex1212.MinecraftRiichiMahjongClient"
+      }
     },
     "depends": [
       {
