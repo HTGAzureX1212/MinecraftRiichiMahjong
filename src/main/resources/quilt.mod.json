@@ -3,7 +3,7 @@
     "quilt_loader": {
         "group": "com.github.htgazurex1212",
         "id": "minecraft_riichi_mahjong",
-        "version": "${mod.version}",
+        "version": "${version}",
         "metadata": {
             "name": "Minecraft Riichi Mahjong",
             "description": "A mod to enable playing Riichi mahjong from within Minecraft!",
@@ -18,7 +18,7 @@
         },
         "intermediate_mappings": "net.fabricmc:intermediary",
         "entrypoints": {
-            "main": {
+            "init": {
                 "adapter": "kotlin",
                 "value": "com.github.htgazurex1212.minecraftriichimahjong.MinecraftRiichiMahjong"
             },
@@ -28,6 +28,10 @@
             }
         },
         "depends": [
+            {
+                "id": "qkl",
+                "versions": ">=2.1.3"
+            },
             {
                 "id": "quilt_loader",
                 "versions": ">=0.19.1"
