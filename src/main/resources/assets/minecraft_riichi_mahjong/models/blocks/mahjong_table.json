@@ -1,8 +1,8 @@
 {
 	"texture_size": [128, 128],
 	"textures": {
-		"0": "assets:blocks/mahjong_table",
-		"particle": "assets:blocks/mahjong_table"
+		"0": "minecraft_riichi_mahjong:blocks/mahjong_table",
+		"particle": "minecraft_riichi_mahjong:blocks/mahjong_table"
 	},
 	"elements": [
 		{

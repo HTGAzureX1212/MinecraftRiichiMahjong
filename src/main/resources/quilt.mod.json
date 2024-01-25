@@ -1,45 +1,45 @@
 {
-  "schema_version": 1,
-  "quilt_loader": {
-    "group": "com.github.htgazurex1212",
-    "id": "minecraft_riichi_mahjong",
-    "version": "${mod.version}",
-    "metadata": {
-      "name": "Minecraft Riichi Mahjong",
-      "description": "A mod to enable playing Riichi mahjong from within Minecraft!",
-      "contributors": {
-        "HTGAzureX1212.": "Owner"
-      },
-      "contact": {
-        "homepage": "https://github.com/HTGAzureX1212/MinecraftRiichiMahjong",
-        "issues": "https://github.com/HTGAzureX1212/MinecraftRiichiMahjong/issues",
-        "sources": "https://github.com/HTGAzureX1212/MinecraftRiichiMahjong"
-      }
-    },
-    "intermediate_mappings": "net.fabricmc:intermediary",
-    "entrypoints": {
-      "main": {
-        "adapter": "kotlin",
-        "value": "com.github.htgazurex1212.minecraftriichimahjong.MinecraftRiichiMahjong"
-      },
-      "client": {
-        "adapter": "kotlin",
-        "value": "com.github.htgazurex1212.minecraftriichimahjong.MinecraftRiichiMahjongClient"
-      }
-    },
-    "depends": [
-      {
-        "id": "quilt_loader",
-        "versions": ">=0.19.1"
-      },
-      {
-        "id": "quilted_fabric_api",
-        "versions": ">=7.0.2"
-      },
-      {
-        "id": "minecraft",
-        "versions": ">=1.20"
-      }
-    ]
-  }
+    "schema_version": 1,
+    "quilt_loader": {
+        "group": "com.github.htgazurex1212",
+        "id": "minecraft_riichi_mahjong",
+        "version": "${mod.version}",
+        "metadata": {
+            "name": "Minecraft Riichi Mahjong",
+            "description": "A mod to enable playing Riichi mahjong from within Minecraft!",
+            "contributors": {
+                "HTGAzureX1212.": "Owner"
+            },
+            "contact": {
+                "homepage": "https://github.com/HTGAzureX1212/MinecraftRiichiMahjong",
+                "issues": "https://github.com/HTGAzureX1212/MinecraftRiichiMahjong/issues",
+                "sources": "https://github.com/HTGAzureX1212/MinecraftRiichiMahjong"
+            }
+        },
+        "intermediate_mappings": "net.fabricmc:intermediary",
+        "entrypoints": {
+            "main": {
+                "adapter": "kotlin",
+                "value": "com.github.htgazurex1212.minecraftriichimahjong.MinecraftRiichiMahjong"
+            },
+            "client": {
+                "adapter": "kotlin",
+                "value": "com.github.htgazurex1212.minecraftriichimahjong.MinecraftRiichiMahjongClient"
+            }
+        },
+        "depends": [
+            {
+                "id": "quilt_loader",
+                "versions": ">=0.19.1"
+            },
+            {
+                "id": "quilted_fabric_api",
+                "versions": ">=7.0.2"
+            },
+            {
+                "id": "minecraft",
+                "versions": ">=1.20"
+            }
+        ]
+    }
 }

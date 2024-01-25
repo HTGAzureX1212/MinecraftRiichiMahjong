@@ -19,6 +19,7 @@ package com.github.htgazurex1212.minecraftriichimahjong.registries
 
 import com.github.htgazurex1212.minecraftriichimahjong.blocks.MahjongTable
 import com.github.htgazurex1212.minecraftriichimahjong.utils.toMinecraftIdentifier
+import net.minecraft.block.piston.PistonBehavior
 import net.minecraft.item.BlockItem
 import net.minecraft.registry.Registries
 import net.minecraft.registry.Registry
@@ -30,6 +31,7 @@ object BlockRegistry {
     val MAHJONG_TABLE: MahjongTable = MahjongTable(
         QuiltBlockSettings.create()
             .nonOpaque()
+            .pistonBehavior(PistonBehavior.IGNORE)
             .sounds(BlockSoundGroup.WOOD)
             .strength(1f)
     )
