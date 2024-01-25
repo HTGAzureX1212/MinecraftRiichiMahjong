@@ -22,7 +22,7 @@
                 "adapter": "kotlin",
                 "value": "com.github.htgazurex1212.minecraftriichimahjong.MinecraftRiichiMahjong"
             },
-            "client": {
+            "client_init": {
                 "adapter": "kotlin",
                 "value": "com.github.htgazurex1212.minecraftriichimahjong.MinecraftRiichiMahjongClient"
             }

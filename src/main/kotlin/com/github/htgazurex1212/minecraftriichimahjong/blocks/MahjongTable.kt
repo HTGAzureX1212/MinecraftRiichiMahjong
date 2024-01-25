@@ -18,6 +18,7 @@
 package com.github.htgazurex1212.minecraftriichimahjong.blocks
 
 import com.github.htgazurex1212.minecraftriichimahjong.blockentities.MahjongTableBlockEntity
+import net.minecraft.block.Block
 import net.minecraft.block.BlockRenderType
 import net.minecraft.block.BlockState
 import net.minecraft.block.BlockWithEntity
@@ -26,6 +27,7 @@ import net.minecraft.block.entity.BlockEntity
 import net.minecraft.entity.LivingEntity
 import net.minecraft.item.ItemPlacementContext
 import net.minecraft.item.ItemStack
+import net.minecraft.state.StateManager
 import net.minecraft.state.property.EnumProperty
 import net.minecraft.util.StringIdentifiable
 import net.minecraft.util.math.BlockPos
@@ -33,7 +35,11 @@ import net.minecraft.world.World
 
 class MahjongTable(settings: Settings) : BlockWithEntity(settings) {
     init {
-        stateManager.defaultState.with(TABLE_PART, Part.BOTTOM_CENTER)
+        defaultState = stateManager.defaultState.with(TABLE_PART, Part.BOTTOM_CENTER)
+    }
+
+    override fun appendProperties(builder: StateManager.Builder<Block, BlockState>) {
+        builder.add(TABLE_PART)
     }
 
     override fun createBlockEntity(blockPos: BlockPos, blockState: BlockState): BlockEntity? {
@@ -100,7 +106,7 @@ class MahjongTable(settings: Settings) : BlockWithEntity(settings) {
     }
 
     companion object {
-        val TABLE_PART: EnumProperty<Part> = EnumProperty.of("mahjong_table_part", Part::class.java)
+        val TABLE_PART: EnumProperty<Part> = EnumProperty.of("table_part", Part::class.java)
 
         fun peripheryAroundPos(position: BlockPos): List<Pair<Part, BlockPos>> = listOf(
             Part.BOTTOM_EAST      to position.east(),
