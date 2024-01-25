@@ -2,7 +2,7 @@
   "schema_version": 1,
   "quilt_loader": {
     "group": "com.github.htgazurex1212",
-    "id": "minecraft-riichi-mahjong",
+    "id": "minecraft_riichi_mahjong",
     "version": "${mod.version}",
     "metadata": {
       "name": "Minecraft Riichi Mahjong",
@@ -20,11 +20,11 @@
     "entrypoints": {
       "main": {
         "adapter": "kotlin",
-        "value": "com.github.htgazurex1212.MinecraftRiichiMahjong"
+        "value": "com.github.htgazurex1212.minecraftriichimahjong.MinecraftRiichiMahjong"
       },
       "client": {
         "adapter": "kotlin",
-        "value": "com.github.htgazurex1212.MinecraftRiichiMahjongClient"
+        "value": "com.github.htgazurex1212.minecraftriichimahjong.MinecraftRiichiMahjongClient"
       }
     },
     "depends": [
